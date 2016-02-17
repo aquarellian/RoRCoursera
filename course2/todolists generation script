@@ -1,0 +1,10 @@
+aquarellian$ rails new todolists
+cd todolists
+bundle update
+rails generate rspec:install
+rails g scaffold user username password_digest
+rails g scaffold profile gender birth_year:integer first_name last_name user:references
+rails g scaffold todo_list list_name list_due_date:date user:references
+rails g scaffold todo_item due_date:date title description:text completed:boolean todo_list:references 
+
+rake db:migrate
