@@ -1,4 +1,4 @@
-aquarellian$ rails new todolists
+rails new todolists
 cd todolists
 bundle update
 rails generate rspec:install
